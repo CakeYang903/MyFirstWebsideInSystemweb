@@ -9853,9 +9853,14 @@ form .row:first-child .floating-label-form-group {
 }
 
 /* generic css */
+#all {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
 .view {
   margin: 10px;
-  float: left;
   border: 10px solid #fff;
   overflow: hidden;
   position: relative;
@@ -10044,7 +10049,7 @@ form .row:first-child .floating-label-form-group {
 /*3*/
 .view-tenth img {
   transform: scaleY(1);
-  transition: all .7s ease-in-out;
+  transition: all 0.7s ease-in-out;
 }
 
 .view-tenth .mask {

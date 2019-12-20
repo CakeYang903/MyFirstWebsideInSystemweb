@@ -18,41 +18,44 @@
 @import "layout/contact.scss";
 @import "layout/footer.scss";
 
-.custom-background{
+.custom-background {
     background-image: url("../img/Myself/background.jpg");
 }
 
-
-  /* generic css */
-  
-  .view {
+/* generic css */
+#all {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.view {
     margin: 10px;
-    float: left;
+    // float: left;
     border: 10px solid #fff;
     overflow: hidden;
     position: relative;
     text-align: center;
     box-shadow: 1px 1px 2px #e6e6e6;
     cursor: default;
-    background: #fff url(../images/bgimg.jpg) no-repeat center center
-  }
-  
-  .view .mask,
-  .view .content {
+    background: #fff url(../images/bgimg.jpg) no-repeat center center;
+}
+
+.view .mask,
+.view .content {
     width: 300px;
     height: 200px;
     position: absolute;
     overflow: hidden;
     top: 0;
-    left: 0
-  }
-  
-  .view img {
+    left: 0;
+}
+
+.view img {
     display: block;
-    position: relative
-  }
-  
-  .view h2 {
+    position: relative;
+}
+
+.view h2 {
     text-transform: uppercase;
     color: #fff;
     text-align: center;
@@ -60,20 +63,20 @@
     font-size: 17px;
     font-family: Raleway, serif;
     padding: 10px;
-    margin: 20px 0 0 0
-  }
-  
-  .view p {
+    margin: 20px 0 0 0;
+}
+
+.view p {
     font-family: Merriweather, serif;
     font-style: italic;
     font-size: 14px;
     position: relative;
     color: #fff;
     padding: 0px 20px 0px;
-    text-align: center
-  }
-  
-  .view a.info {
+    text-align: center;
+}
+
+.view a.info {
     display: inline-block;
     text-decoration: none;
     padding: 7px 14px;
@@ -81,82 +84,79 @@
     color: #fff;
     font-family: Raleway, serif;
     text-transform: uppercase;
-    box-shadow: 0 0 1px #000
-  }
-  
-  .view a.info:hover {
-    box-shadow: 0 0 5px #000
-  }
-  
-  
-  /*1*/
-  
-  .view-first img {
+    box-shadow: 0 0 1px #000;
+}
+
+.view a.info:hover {
+    box-shadow: 0 0 5px #000;
+}
+
+/*1*/
+
+.view-first img {
     /*1*/
     transition: all 0.2s linear;
     width: 300px;
     height: 200px;
-  }
-  
-  .view-first .mask {
+}
+
+.view-first .mask {
     opacity: 0;
     background-color: rgba(58, 1, 132, 0.44);
     transition: all 0.4s ease-in-out;
-  }
-  
-  .view-first h2 {
+}
+
+.view-first h2 {
     transform: translateY(-100px);
     opacity: 0;
     font-family: Raleway, serif;
     transition: all 0.2s ease-in-out;
-  }
-  
-  .view-first p {
+}
+
+.view-first p {
     transform: translateY(100px);
     opacity: 0;
     transition: all 0.2s linear;
-  }
-  
-  .view-first a.info {
+}
+
+.view-first a.info {
     opacity: 0;
     transition: all 0.2s ease-in-out;
-  }
-  
-  
-  /* */
-  
-  .view-first:hover img {
+}
+
+/* */
+
+.view-first:hover img {
     transform: scale(1.1);
-  }
-  
-  .view-first:hover .mask {
+}
+
+.view-first:hover .mask {
     opacity: 1;
-  }
-  
-  .view-first:hover h2,
-  .view-first:hover p,
-  .view-first:hover a.info {
+}
+
+.view-first:hover h2,
+.view-first:hover p,
+.view-first:hover a.info {
     opacity: 1;
     transform: translateY(0px);
-  }
-  
-  .view-first:hover p {
+}
+
+.view-first:hover p {
     transition-delay: 0.1s;
-  }
-  
-  .view-first:hover a.info {
+}
+
+.view-first:hover a.info {
     transition-delay: 0.2s;
-  }
-  
-  
-  /*2*/
-  
-  .view-second img {
+}
+
+/*2*/
+
+.view-second img {
     transition: all 0.2s ease-in;
     -webkit-transition: all 0.2s ease-in;
-  }
-  
-  .view-second .mask {
+}
+
+.view-second .mask {
     background-color: rgba(12, 19, 27, 0.6);
     width: 300px;
     padding: 105px;
@@ -166,9 +166,9 @@
     -webkit-transform: translate(265px, 145px) rotate(45deg);
     transition: all 0.2s ease-in-out;
     -webkit-transition: all 0.2s ease-in-out;
-  }
-  
-  .view-second h2 {
+}
+
+.view-second h2 {
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
     font-family: Raleway, serif;
     background: transparent;
@@ -177,67 +177,65 @@
     transform: translate(200px, -200px);
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
-  }
-  
-  .view-second p {
+}
+
+.view-second p {
     transform: translate(-200px, 200px);
     -webkit-transform: translate(200px, -200px);
     transition: all 0.2s ease-in-out;
     -webkit-transition: all 0.2s ease-in-out;
-  }
-  
-  .view-second a.info {
+}
+
+.view-second a.info {
     transform: translate(0px, 100px);
     -webkit-transform: translate(0px, 100px);
     transition: all 0.2s 0.1s ease-in-out;
     -webkit-transition: all 0.2s 0.1s ease-in-out;
-  }
-  
-  
-  /* */
-  
-  .view-second:hover .mask {
+}
+
+/* */
+
+.view-second:hover .mask {
     opacity: 1;
     transform: translate(-80px, -125px) rotate(45deg);
     -webkit-transform: translate(-80px, -125px) rotate(45deg);
-  }
-  
-  .view-second:hover h2 {
+}
+
+.view-second:hover h2 {
     transform: translate(0px, 0px);
     -webkit-transform: translate(0px, 0px);
     transition-delay: 0.3s;
     -webkit-transition-delay: 0.3s;
-  }
-  
-  .view-second:hover p {
+}
+
+.view-second:hover p {
     transform: translate(0px, 0px);
     -webkit-transform: translate(0px, 0px);
     transition-delay: 0.4s;
     -webkit-transition-delay: 0.4s;
-  }
-  
-  .view-second:hover a.info {
+}
+
+.view-second:hover a.info {
     transform: translate(0px, 0px);
     -webkit-transform: translate(0px, 0px);
     transition-delay: 0.5s;
     -webkit-transition-delay: 0.5s;
-  }
-  
-  
-  /*3*/
-  
-  .view-tenth img {
+}
+
+/*3*/
+
+.view-tenth img {
     transform: scaleY(1);
-    transition: all .7s ease-in-out;
-  }
-  
-  .view-tenth .mask {
+    transition: all 0.7s ease-in-out;
+}
+
+.view-tenth .mask {
     background-color: rgba(255, 231, 179, 0.3);
     transition: all 0.5s linear;
     opacity: 0;
-  }
-  
-  .view-tenth h2 {
+}
+
+.view-tenth h2 {
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
     background: transparent;
     margin: 20px 40px 0px 40px;
@@ -245,35 +243,34 @@
     color: #333;
     transition: all 0.5s linear;
     opacity: 0;
-  }
-  
-  .view-tenth p {
+}
+
+.view-tenth p {
     color: #333;
     opacity: 0;
     transform: scale(0);
     transition: all 0.5s linear;
-    
-  }
-  
-  .view-tenth a.info {
+}
+
+.view-tenth a.info {
     opacity: 0;
     transform: scale(0);
     transition: all 0.5s linear;
-  }
-  
-  .view-tenth:hover img {
+}
+
+.view-tenth:hover img {
     -webkit-transform: scale(10);
     transform: scale(10);
     opacity: 0;
-  }
-  
-  .view-tenth:hover .mask {
+}
+
+.view-tenth:hover .mask {
     opacity: 1;
-  }
-  
-  .view-tenth:hover h2,
-  .view-tenth:hover p,
-  .view-tenth:hover a.info {
+}
+
+.view-tenth:hover h2,
+.view-tenth:hover p,
+.view-tenth:hover a.info {
     transform: scale(1);
     opacity: 1;
-  }
+}
